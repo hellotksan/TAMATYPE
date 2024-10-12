@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAMAtype</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Combo Box Menu -->
+    <section class="box menu">
+      <div class="hit">A</div>
+      <div class="miss">A</div>
+      <select id="mondainoselect"></select>
+      <select id="selectTime">
+        <option value="5">5秒</option>
+        <option value="10">10秒</option>
+        <option value="30" selected>30秒</option>
+        <option value="60">60秒</option>
+        <option value="90">90秒</option>
+        <option value="120">120秒</option>
+      </select>
+
+      <select id="selectOrder">
+        <option value="true">登録順</option>
+        <option value="false" selected>ランダム</option>
+      </select>
+
+      <!-- <select name="kviewselect" onclick="kviewchange(value)">
+            <option value="0" selected>キー表示あり
+            <option value="1">キー表示なし
+        </select>
+        <select name="mojikubetuselect" onclick="mojikubetuchange(value)">
+            <option value="0" selected>大文字小文字区別なし
+            <option value="1">大文字小文字区別あり
+        </select>
+        <select name="jogenselect" onclick="jogenchange(value)">
+            <option value="0" selected>初心者モードオフ
+            <option value="100">初心者モードオン
+        </select> -->
+      TAMAtype ver.Takahashi
+    </section>
+    <section class="box score">
+      <table border>
+        <tr>
+          <td>入力スピード</td>
+          <td>入力文字数</td>
+          <td>入力ワード数</td>
+          <td>ミスタイプ</td>
+          <td>残り時間</td>
+        </tr>
+        <tr>
+          <td class="score1">0 文字/分</td>
+          <td class="score2">0 文字</td>
+          <td class="score3">0 ワード</td>
+          <td class="score4">0 回</td>
+          <td class="score5">30 秒</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 【問題の表示画面】----------------------------------------------------- -->
+    <section class="box dan0">
+      <div class="quest">
+        <div class="msg"></div>
+        <div class="bufView">
+          <span class="inputAfter"></span>
+          <span class="inputBuf"></span>
+          <span class="inputBefore"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Num Key -->
+    <section class="box dan1">
+      <ul>
+        <li class="k">全半</li>
+        <li class="k49 k33">1</li>
+        <li class="k50 k34">2</li>
+        <li class="k51 k35">3</li>
+        <li class="k52 k36">4</li>
+        <li class="k53 k37">5</li>
+        <li class="k54 k38">6</li>
+        <li class="k55 k39">7</li>
+        <li class="k56 k40">8</li>
+        <li class="k57 k41">9</li>
+        <li class="k48">0</li>
+        <li class="k45 k61">=</li>
+        <li class="k94 k126">~</li>
+        <li class="k92 k124">\</li>
+        <li class="">BS</li>
+      </ul>
+    </section>
+    <!-- 【アルファベット上段部分】----------------------------------------------------- -->
+    <section class="box dan2">
+      <ul>
+        <li class="">Tab</li>
+        <li class="k81">Q</li>
+        <li class="k87">W</li>
+        <li class="k69">E</li>
+        <li class="k82">R</li>
+        <li class="k84">T</li>
+        <li class="k89">Y</li>
+        <li class="k85">U</li>
+        <li class="k73">I</li>
+        <li class="k79">O</li>
+        <li class="k80">P</li>
+        <li class="k64 k96">@</li>
+        <li class="k91 k123">[</li>
+        <li class="k">Enter</li>
+      </ul>
+    </section>
+    <!-- 【アルファベット中段部分】----------------------------------------------------- -->
+    <section class="box dan3">
+      <ul>
+        <li class="k">CapsLock</li>
+        <li class="k65">A</li>
+        <li class="k83">S</li>
+        <li class="k68">D</li>
+        <li class="k70">F</li>
+        <li class="k71">G</li>
+        <li class="k72">H</li>
+        <li class="k74">J</li>
+        <li class="k75">K</li>
+        <li class="k76">L</li>
+        <li class="k59 k43">;</li>
+        <li class="k58 k42">:</li>
+        <li class="k93 k125">]</li>
+      </ul>
+    </section>
+
+    <!-- 【アルファベット下段部分】----------------------------------------------------- -->
+    <section class="box dan4">
+      <ul>
+        <li class="k">Shift</li>
+        <li class="k90">Z</li>
+        <li class="k88">X</li>
+        <li class="k67">C</li>
+        <li class="k86">V</li>
+        <li class="k66">B</li>
+        <li class="k78">N</li>
+        <li class="k77">M</li>
+        <li class="k44 k60">,</li>
+        <li class="k46 k62">.</li>
+        <li class="k47 k63">/</li>
+        <li class="k92 k95">\</li>
+        <li class="k">Shift</li>
+      </ul>
+    </section>
+
+    <!-- space key -->
+    <section class="box dan5">
+      <ul>
+        <li class="space"></li>
+      </ul>
+    </section>
+
+    <!-- practice record -->
+    <section class="box history">
+      <table>
+        <tr>
+          <td class="title0">FGJH(0)</td>
+          <td class="title1">往復(0)</td>
+          <td class="title2">1段目(0)</td>
+          <td class="title3">2段目(0)</td>
+          <td class="title4">3段目(0)</td>
+          <td class="title5">数字(0)</td>
+          <td class="title6">記号(0)</td>
+          <td class="title7">記号のみ(0)</td>
+          <td class="title8">A-Z(0)</td>
+          <td class="title9">単語(0)</td>
+        </tr>
+        <tr>
+          <td class="total0">&nbsp;</td>
+          <td class="total1">&nbsp;</td>
+          <td class="total2">&nbsp;</td>
+          <td class="total3">&nbsp;</td>
+          <td class="total4">&nbsp;</td>
+          <td class="total5">&nbsp;</td>
+          <td class="total6">&nbsp;</td>
+          <td class="total7">&nbsp;</td>
+          <td class="total8">&nbsp;</td>
+          <td class="total9">&nbsp;</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 【デバッグ文字表示部分】----------------------------------------------------- -->
+    <script src="kanaloma.js"></script>
+    <script src="quest.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

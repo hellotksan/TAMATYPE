@@ -1,0 +1,308 @@
+.box {
+  padding: 0px 10px;
+  margin: 0px;
+  height: 65px;
+  width: 1000px;
+  background-color: skyblue;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ----------------------------------------------- */
+.hit {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  background-color: yellow;
+  position: absolute;
+  left: 10px;
+  top: 110px;
+  text-align: center;
+  z-index: 50;
+  border-top: 5px solid lightgray;
+  border-left: 5px solid lightgray;
+  border-right: 5px solid gray;
+  border-bottom: 5px solid gray;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+.miss {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  background-color: red;
+  position: absolute;
+  left: 10px;
+  top: 210px;
+  text-align: center;
+  z-index: 50;
+  border-top: 5px solid lightgray;
+  border-left: 5px solid lightgray;
+  border-right: 5px solid gray;
+  border-bottom: 5px solid gray;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+.box ul {
+  margin: 0 auto;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  background-color: skyblue;
+  display: inline-block;
+}
+
+.box li {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  background-color: lightcyan;
+  border-top: 5px solid lightgray;
+  border-left: 5px solid lightgray;
+  border-right: 5px solid gray;
+  border-bottom: 5px solid gray;
+}
+
+/* 【両端のグレーのキー】----------------------------------------------- */
+.dan1 ul li:first-child {
+  width: 50px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan2 ul li:first-child {
+  width: 85px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan3 ul li:first-child {
+  width: 120px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan4 ul li:first-child {
+  width: 155px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan1 ul li:last-child {
+  width: 60px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan2 ul li:last-child {
+  width: 95px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+.dan4 ul li:last-child {
+  width: 90px;
+  background-color: gray;
+  color: #ffffff;
+}
+
+/* 【各列の色変え設定】----------------------------------------------- */
+.box ul li:nth-child(2) {
+  background-color: lightblue;
+}
+
+.box ul li:nth-child(3) {
+  background-color: lightgreen;
+}
+
+.box ul li:nth-child(4) {
+  background-color: lightsalmon;
+}
+
+.box ul li:nth-child(5) {
+  background-color: lightcyan;
+}
+
+.box ul li:nth-child(6) {
+  background-color: lightcyan;
+}
+
+.box ul li:nth-child(7) {
+  background-color: lightblue;
+}
+
+.box ul li:nth-child(8) {
+  background-color: lightblue;
+}
+
+.box ul li:nth-child(9) {
+  background-color: lightgreen;
+}
+
+.box ul li:nth-child(10) {
+  background-color: lightsalmon;
+}
+
+/* 【メニューのコンボボックス】----------------------------------------------- */
+.menu {
+  padding: 0px;
+  margin: 0px;
+  height: 30px;
+  width: 1000px;
+
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* 【スコア用のテーブル】----------------------------------------------- */
+.score {
+  padding: 0px;
+  margin: 0px;
+  height: 60px;
+  width: 1000px;
+
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+.score table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  margin: 0px auto;
+}
+
+.score tr:first-child td {
+  text-align: center;
+  width: 150px;
+  background-color: lightcyan;
+  border: 0px solid red;
+}
+
+.score tr:last-child td {
+  text-align: right;
+  width: 150px;
+  background-color: #fff;
+  border: 0px solid red;
+}
+
+/* 【問題表示エリア】----------------------------------------------- */
+.dan0 {
+  padding: 0px 10px;
+  margin: 0px;
+  height: 140px;
+  width: 1000px;
+
+  background-color: skyblue;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quest {
+  width: 800px;
+  height: 100px;
+  background-color: #cff;
+  margin: 10px auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  height: 120px;
+}
+
+.quest .msg {
+  background-color: #fff;
+  text-align: center;
+  width: 600px;
+  height: 60px;
+  margin: 0px auto;
+  margin-top: 30px;
+  /* position: absolute;
+        left: 50%;
+        margin: -200px;
+        top: 0px; */
+  font-size: 40px;
+}
+
+.quest .bufView {
+  background-color: #eee;
+  text-align: center;
+  width: 600px;
+  height: 30px;
+  margin: 0px auto;
+}
+
+/* 【スペースキーの表示】----------------------------------------------- */
+.dan5 {
+  background-color: skyblue;
+  position: relative;
+}
+
+.dan5 li {
+  position: absolute;
+  left: 250px;
+  width: 400px;
+  height: 50px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* 【練習記録のテーブル】----------------------------------------------- */
+.history {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.history table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  margin: 0px auto;
+}
+
+.history tr:first-child td {
+  text-align: center;
+  width: 110px;
+  background-color: lightcyan;
+  border: 0px solid red;
+}
+
+.history tr:last-child td {
+  text-align: right;
+  width: 110px;
+  background-color: #fff;
+  border: 0px solid red;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.history span {
+  font-size: 0.8em;
+}
+
+.inputAfter {
+  color: #999;
+}
+
+.inputBuf {
+  color: #999;
+  background-color: #ff0;
+}
+
+.inputBefore {
+  color: #000;
+}
